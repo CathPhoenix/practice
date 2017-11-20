@@ -1,0 +1,16 @@
+
+<div class="col-xs-12">
+    <div class = "thumbnail">
+        <img [src]="imageUrl"/>
+        <h3>{{film.title}}</h3>
+        <p id="price">€{{film.price.toFixed(2)}}</p>
+        <p class = "caption">{{film.blurb}}</p>
+
+        <review [film]="film"></review>
+        <br>
+        <div>
+            <score [score]="film.score"></score>
+        </div>
+    </div>
+</div>
+
